@@ -12,7 +12,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet var window: NSWindow
     @IBOutlet var btSay : NSButton
-    
     @IBOutlet var tbName : NSTextField
     @IBOutlet var lbHello : NSTextField
     
