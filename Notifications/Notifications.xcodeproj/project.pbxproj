@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2F0DB981B4862F80066CED2 /* Night Owl.m4r in Resources */ = {isa = PBXBuildFile; fileRef = B2F0DB971B4862F80066CED2 /* Night Owl.m4r */; };
+		B2F0DB9B1B487BB60066CED2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0DB9A1B487BB60066CED2 /* SettingsViewController.swift */; };
+		B2F0DBA01B487FB10066CED2 /* SchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0DB9F1B487FB10066CED2 /* SchedulerType.swift */; };
+		B2F0DBA11B487FB10066CED2 /* SchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0DB9F1B487FB10066CED2 /* SchedulerType.swift */; };
 		B2F3C5E21B46FD4E004FC452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3C5E11B46FD4E004FC452 /* AppDelegate.swift */; };
 		B2F3C5E41B46FD4E004FC452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3C5E31B46FD4E004FC452 /* ViewController.swift */; };
 		B2F3C5E71B46FD4E004FC452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F3C5E51B46FD4E004FC452 /* Main.storyboard */; };
@@ -26,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2F0DB971B4862F80066CED2 /* Night Owl.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Night Owl.m4r"; sourceTree = "<group>"; };
+		B2F0DB9A1B487BB60066CED2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B2F0DB9F1B487FB10066CED2 /* SchedulerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerType.swift; sourceTree = "<group>"; };
 		B2F3C5DE1B46FD4E004FC452 /* Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F3C5E11B46FD4E004FC452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F3C5E31B46FD4E004FC452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,9 +63,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2F0DB991B4863070066CED2 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				B2F0DB971B4862F80066CED2 /* Night Owl.m4r */,
+			);
+			name = DataStore;
+			sourceTree = "<group>";
+		};
+		B2F0DB9C1B487BD30066CED2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2F0DB9A1B487BB60066CED2 /* SettingsViewController.swift */,
+				B2F3C5E31B46FD4E004FC452 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B2F3C5D51B46FD4E004FC452 = {
 			isa = PBXGroup;
 			children = (
+				B2F0DB991B4863070066CED2 /* DataStore */,
 				B2F3C5E01B46FD4E004FC452 /* Notifications */,
 				B2F3C5F51B46FD4F004FC452 /* NotificationsTests */,
 				B2F3C5DF1B46FD4E004FC452 /* Products */,
@@ -77,12 +102,13 @@
 		B2F3C5E01B46FD4E004FC452 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				B2F0DB9C1B487BD30066CED2 /* ViewControllers */,
 				B2F3C5E11B46FD4E004FC452 /* AppDelegate.swift */,
-				B2F3C5E31B46FD4E004FC452 /* ViewController.swift */,
 				B2F3C5E51B46FD4E004FC452 /* Main.storyboard */,
 				B2F3C5E81B46FD4E004FC452 /* Assets.xcassets */,
 				B2F3C5EA1B46FD4E004FC452 /* LaunchScreen.storyboard */,
 				B2F3C5ED1B46FD4E004FC452 /* Info.plist */,
+				B2F0DB9F1B487FB10066CED2 /* SchedulerType.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -178,6 +204,7 @@
 			files = (
 				B2F3C5EC1B46FD4E004FC452 /* LaunchScreen.storyboard in Resources */,
 				B2F3C5E91B46FD4E004FC452 /* Assets.xcassets in Resources */,
+				B2F0DB981B4862F80066CED2 /* Night Owl.m4r in Resources */,
 				B2F3C5E71B46FD4E004FC452 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +225,8 @@
 			files = (
 				B2F3C5E41B46FD4E004FC452 /* ViewController.swift in Sources */,
 				B2F3C5E21B46FD4E004FC452 /* AppDelegate.swift in Sources */,
+				B2F0DB9B1B487BB60066CED2 /* SettingsViewController.swift in Sources */,
+				B2F0DBA01B487FB10066CED2 /* SchedulerType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F3C5F71B46FD4F004FC452 /* NotificationsTests.swift in Sources */,
+				B2F0DBA11B487FB10066CED2 /* SchedulerType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

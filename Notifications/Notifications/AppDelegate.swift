@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        let settings = UIUserNotificationSettings(forTypes: .Alert, categories: nil)
+        let settings = UIUserNotificationSettings(forTypes: [.Sound, .Alert, .Badge], categories: nil)
         application.registerUserNotificationSettings(settings)
         
         return true
@@ -31,6 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         scheduleLocalNotification()
     }
     
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        NSLog("Notification")
+        if application.applicationState == UIApplicationState.Active {
+            NSLog("application active state")
+        }
+    }
+    
     func scheduleLocalNotification(){
         
         let notification = UILocalNotification()
@@ -40,6 +47,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notification.alertBody = "Notification item"
         notification.hasAction = true
         notification.alertAction = "View"
+//        notification.soundName = "Night Owl.m4r"
+//        notification.soundName = UILocalNotificationDefaultSoundName
+
+//        notification.repeatInterval = NSCalendarUnit.Minute
         
         notification.applicationIconBadgeNumber++
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
