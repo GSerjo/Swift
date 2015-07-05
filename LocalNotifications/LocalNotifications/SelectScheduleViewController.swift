@@ -10,7 +10,9 @@ import UIKit
 
 class SelectScheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let _schedules: [ScheduleType] = [ScheduleType1(), ScheduleType2()]
+    let _schedules: [ScheduleType] = Schedule.sharedInstance.items
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,19 +49,27 @@ class SelectScheduleViewController: UIViewController, UITableViewDataSource, UIT
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         println(_schedules[indexPath.row].name)
-        
         let item = _schedules[indexPath.row]
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
-        
-        item.selected = !item.selected
         
         if item.selected {
-            cell?.accessoryType = UITableViewCellAccessoryType.Checkmark
+            return
         }
-        else {
-            cell?.accessoryType = UITableViewCellAccessoryType.None
+        
+        unselectAllSchedules()
+        
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        item.selected = true
+        tableView.reloadData()
+    }
+    
+    
+    func unselectAllSchedules(){
+        
+        for item in _schedules {
+            item.selected = false
         }
     }
+    
 
     /*
     // MARK: - Navigation
