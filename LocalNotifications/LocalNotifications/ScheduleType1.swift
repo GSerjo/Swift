@@ -11,8 +11,9 @@ import Foundation
 class ScheduleType1: ScheduleType {
     
     init() {
-        super.init(name: "ScheduleType1")
+        super.init(name: "Режим номер 1")
         selected = true
+        times = [TimeItem(hour: 10), TimeItem(hour: 22)]
     }
 }
 

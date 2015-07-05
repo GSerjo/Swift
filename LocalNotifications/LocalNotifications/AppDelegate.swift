@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func scheduleLocalNotification(){
         
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        notification.fireDate = NSDate(timeIntervalSinceNow: 30)
         notification.timeZone = NSCalendar.currentCalendar().timeZone
         
         notification.alertBody = "Notification Item"

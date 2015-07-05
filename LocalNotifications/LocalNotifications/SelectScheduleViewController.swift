@@ -48,7 +48,6 @@ class SelectScheduleViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        println(_schedules[indexPath.row].name)
         let item = _schedules[indexPath.row]
         
         if item.selected {

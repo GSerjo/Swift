@@ -15,7 +15,16 @@ class Schedule {
     let items: [ScheduleType]
     
     init(){
-       items = [ScheduleType1(), ScheduleType2()]
+       items = [ScheduleType1(), ScheduleType2(), ScheduleType3()]
+    }
+    
+    var selectedSchedule: ScheduleType {
+        for item in items {
+            if item.selected {
+                return item
+            }
+        }
+        return items[0]
     }
     
 }

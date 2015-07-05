@@ -15,8 +15,35 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BL1-bf-NV0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TimeItemCell" id="vZq-r2-aKp">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vZq-r2-aKp" id="8ia-ew-MeO">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="dzh-WL-TzQ"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="7Sk-qZ-ixg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BL1-bf-NV0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="JQM-wo-MZc"/>
+                            <constraint firstAttribute="trailing" secondItem="BL1-bf-NV0" secondAttribute="trailing" id="P8d-P8-RpP"/>
+                            <constraint firstItem="BL1-bf-NV0" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="QBU-6b-Cp4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BL1-bf-NV0" secondAttribute="bottom" id="Wxw-Aa-RIt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ufB-jq-jvi">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="ShO-16-caf">
@@ -25,6 +52,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="BL1-bf-NV0" id="cQ0-Cd-UJS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

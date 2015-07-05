@@ -12,6 +12,7 @@ class ScheduleType {
     
     var selected: Bool = false
     let name: String
+    var times: [TimeItem] = []
     
     init(name: String){
         self.name = name

@@ -19,6 +19,8 @@
 		B2C22D161B496FF400BFA781 /* TimeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D141B496FF400BFA781 /* TimeItem.swift */; };
 		B2C22D181B4993CF00BFA781 /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D171B4993CF00BFA781 /* NSDateExtensions.swift */; };
 		B2C22D191B4993CF00BFA781 /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D171B4993CF00BFA781 /* NSDateExtensions.swift */; };
+		B2C22D1B1B49D05600BFA781 /* ScheduleType3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D1A1B49D05600BFA781 /* ScheduleType3.swift */; };
+		B2C22D1C1B49D05600BFA781 /* ScheduleType3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D1A1B49D05600BFA781 /* ScheduleType3.swift */; };
 		B2F7F69A1B48A91F00ABA1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6991B48A91F00ABA1FD /* AppDelegate.swift */; };
 		B2F7F69C1B48A91F00ABA1FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F69B1B48A91F00ABA1FD /* ViewController.swift */; };
 		B2F7F69F1B48A91F00ABA1FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F7F69D1B48A91F00ABA1FD /* Main.storyboard */; };
@@ -47,6 +49,7 @@
 		B2C22D111B49691200BFA781 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		B2C22D141B496FF400BFA781 /* TimeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeItem.swift; sourceTree = "<group>"; };
 		B2C22D171B4993CF00BFA781 /* NSDateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensions.swift; sourceTree = "<group>"; };
+		B2C22D1A1B49D05600BFA781 /* ScheduleType3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType3.swift; sourceTree = "<group>"; };
 		B2F7F6941B48A91F00ABA1FD /* LocalNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F7F6981B48A91F00ABA1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F7F6991B48A91F00ABA1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 				B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */,
 				B2C22D041B494E6700BFA781 /* ScheduleType1.swift */,
 				B2C22D061B49508B00BFA781 /* ScheduleType2.swift */,
+				B2C22D1A1B49D05600BFA781 /* ScheduleType3.swift */,
 				B2C22D141B496FF400BFA781 /* TimeItem.swift */,
 			);
 			name = Schedules;
@@ -283,6 +287,7 @@
 				B2C22D0A1B49515D00BFA781 /* StringExtensions.swift in Sources */,
 				B2C22D051B494E6700BFA781 /* ScheduleType1.swift in Sources */,
 				B2F7F69A1B48A91F00ABA1FD /* AppDelegate.swift in Sources */,
+				B2C22D1B1B49D05600BFA781 /* ScheduleType3.swift in Sources */,
 				B2C22D121B49691200BFA781 /* Schedule.swift in Sources */,
 				B2C22D181B4993CF00BFA781 /* NSDateExtensions.swift in Sources */,
 				B2F7F6BB1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */,
@@ -295,6 +300,7 @@
 			files = (
 				B2C22D191B4993CF00BFA781 /* NSDateExtensions.swift in Sources */,
 				B2C22D131B49691200BFA781 /* Schedule.swift in Sources */,
+				B2C22D1C1B49D05600BFA781 /* ScheduleType3.swift in Sources */,
 				B2C22D0F1B4957FE00BFA781 /* ScheduleType2.swift in Sources */,
 				B2F7F6C01B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */,
 				B2F7F6B01B48A91F00ABA1FD /* LocalNotificationsTests.swift in Sources */,

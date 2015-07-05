@@ -69,17 +69,15 @@ public extension NSDate {
         return NSDate(timeIntervalSinceReferenceDate: interval)
     }
     
-    func toString() -> String {
+    public func toString() -> String {
         
         return toString(dateStyle: .ShortStyle, timeStyle: .ShortStyle, doesRelativeDateFormatting: false)
     }
     
-    func toString(#dateStyle: NSDateFormatterStyle, timeStyle: NSDateFormatterStyle, doesRelativeDateFormatting: Bool = false) -> String {
+    public func toString(#format: String) -> String {
         
         let formatter = NSDateFormatter()
-        formatter.dateStyle = dateStyle
-        formatter.timeStyle = timeStyle
-        formatter.doesRelativeDateFormatting = doesRelativeDateFormatting
+        formatter.dateFormat = format
         return formatter.stringFromDate(self)
     }
     
@@ -113,5 +111,14 @@ public extension NSDate {
     
     public var second: Int {
         return self.components().second
+    }
+    
+    private func toString(#dateStyle: NSDateFormatterStyle, timeStyle: NSDateFormatterStyle, doesRelativeDateFormatting: Bool = false) -> String {
+        
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = dateStyle
+        formatter.timeStyle = timeStyle
+        formatter.doesRelativeDateFormatting = doesRelativeDateFormatting
+        return formatter.stringFromDate(self)
     }
 }

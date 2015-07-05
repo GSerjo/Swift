@@ -10,14 +10,14 @@ import Foundation
 
 class TimeItem {
     
-    var time: NSDate = NSDate()
+    let time: NSDate;
     
-    init(){
-    
-        var t = NSDateComponents()
-        t.hour = 8
-        
-        
+    init(hour: Int){
+        time = NSDate(hour: hour)
     }
     
+    func toString() -> String {
+        
+        return time.toString(format: "HH:mm")
+    }
 }
