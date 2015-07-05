@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wb5-zZ-bOI">
-                                <rect key="frame" x="0.0" y="58" width="600" height="542"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="561"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -51,10 +51,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HVF-iR-Vfo" firstAttribute="top" secondItem="wb5-zZ-bOI" secondAttribute="bottom" id="PQj-jx-foI"/>
-                            <constraint firstItem="wb5-zZ-bOI" firstAttribute="top" secondItem="Zcy-0D-QZ9" secondAttribute="top" id="g50-hU-88f"/>
-                            <constraint firstAttribute="trailing" secondItem="wb5-zZ-bOI" secondAttribute="trailing" id="iGh-ER-Cas"/>
-                            <constraint firstItem="wb5-zZ-bOI" firstAttribute="leading" secondItem="Zcy-0D-QZ9" secondAttribute="leading" id="k0U-7J-NLt"/>
+                            <constraint firstAttribute="trailing" secondItem="wb5-zZ-bOI" secondAttribute="trailing" id="0LZ-uv-9Ux"/>
+                            <constraint firstAttribute="bottom" secondItem="wb5-zZ-bOI" secondAttribute="bottom" id="6O5-kI-THx"/>
+                            <constraint firstItem="wb5-zZ-bOI" firstAttribute="leading" secondItem="Zcy-0D-QZ9" secondAttribute="leading" id="Dll-B8-Qbv"/>
+                            <constraint firstItem="wb5-zZ-bOI" firstAttribute="top" secondItem="BH1-bB-XE7" secondAttribute="bottom" id="Dyq-bO-GIg"/>
+                            <constraint firstAttribute="bottom" secondItem="wb5-zZ-bOI" secondAttribute="bottom" id="Oe7-LL-eTo"/>
+                            <constraint firstAttribute="trailing" secondItem="wb5-zZ-bOI" secondAttribute="trailing" id="m4z-Ca-cA8"/>
+                            <constraint firstItem="wb5-zZ-bOI" firstAttribute="leading" secondItem="Zcy-0D-QZ9" secondAttribute="leading" id="tEL-19-p8Y"/>
+                            <constraint firstItem="wb5-zZ-bOI" firstAttribute="top" secondItem="BH1-bB-XE7" secondAttribute="bottom" id="zug-QL-CdG"/>
                         </constraints>
                     </view>
                     <connections>

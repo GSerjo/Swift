@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Notifications
+//  LocalNotifications
 //
-//  Created by Serjo on 03/07/15.
-//  Copyright © 2015 Serjo. All rights reserved.
+//  Created by Serjo on 05/07/15.
+//  Copyright (c) 2015 Serjo. All rights reserved.
 //
 
 import UIKit
@@ -17,29 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound, categories: nil)
+        let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert|UIUserNotificationType.Badge, categories: nil)
         application.registerUserNotificationSettings(settings)
-        
-        if let _ = launchOptions?[UIApplicationLaunchOptionsLocalNotificationKey] as! UILocalNotification!{
-            application.applicationIconBadgeNumber = 0
-        }
         
         return true
     }
     
     func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
-    
-        if notificationSettings.types == UIUserNotificationType.None {
+        
+        if notificationSettings.types == nil {
             return
         }
+        
         scheduleLocalNotification()
-    }
-    
-    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        NSLog("Notification")
-        if application.applicationState == UIApplicationState.Active {
-            NSLog("application active state")
-        }
     }
     
     func scheduleLocalNotification(){
@@ -48,15 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notification.fireDate = NSDate(timeIntervalSinceNow: 10)
         notification.timeZone = NSCalendar.currentCalendar().timeZone
         
-        notification.alertBody = "Notification item"
+        notification.alertBody = "Notification Item"
         notification.hasAction = true
-        notification.alertAction = "View"
-//        notification.soundName = "Night Owl.m4r"
-        notification.soundName = UILocalNotificationDefaultSoundName
-
-//        notification.repeatInterval = NSCalendarUnit.Minute
-        
+        notification.alertAction = "Do"
         notification.applicationIconBadgeNumber++
+        
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
 
