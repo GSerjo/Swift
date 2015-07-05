@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2C22D051B494E6700BFA781 /* ScheduleType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D041B494E6700BFA781 /* ScheduleType1.swift */; };
+		B2C22D071B49508B00BFA781 /* ScheduleType2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D061B49508B00BFA781 /* ScheduleType2.swift */; };
+		B2C22D0A1B49515D00BFA781 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D091B49515D00BFA781 /* StringExtensions.swift */; };
+		B2C22D0D1B4957F800BFA781 /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */; };
+		B2C22D0E1B4957FB00BFA781 /* ScheduleType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D041B494E6700BFA781 /* ScheduleType1.swift */; };
+		B2C22D0F1B4957FE00BFA781 /* ScheduleType2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D061B49508B00BFA781 /* ScheduleType2.swift */; };
 		B2F7F69A1B48A91F00ABA1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6991B48A91F00ABA1FD /* AppDelegate.swift */; };
 		B2F7F69C1B48A91F00ABA1FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F69B1B48A91F00ABA1FD /* ViewController.swift */; };
 		B2F7F69F1B48A91F00ABA1FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F7F69D1B48A91F00ABA1FD /* Main.storyboard */; };
@@ -14,7 +20,6 @@
 		B2F7F6A41B48A91F00ABA1FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F7F6A21B48A91F00ABA1FD /* LaunchScreen.xib */; };
 		B2F7F6B01B48A91F00ABA1FD /* LocalNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6AF1B48A91F00ABA1FD /* LocalNotificationsTests.swift */; };
 		B2F7F6BB1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */; };
-		B2F7F6BC1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */; };
 		B2F7F6BF1B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BE1B48B0B700ABA1FD /* SelectScheduleViewController.swift */; };
 		B2F7F6C01B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BE1B48B0B700ABA1FD /* SelectScheduleViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2C22D041B494E6700BFA781 /* ScheduleType1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType1.swift; sourceTree = "<group>"; };
+		B2C22D061B49508B00BFA781 /* ScheduleType2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType2.swift; sourceTree = "<group>"; };
+		B2C22D091B49515D00BFA781 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		B2F7F6941B48A91F00ABA1FD /* LocalNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F7F6981B48A91F00ABA1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F7F6991B48A91F00ABA1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2C22D081B49514700BFA781 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B2C22D091B49515D00BFA781 /* StringExtensions.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		B2F7F68B1B48A91F00ABA1FD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,7 @@
 		B2F7F6961B48A91F00ABA1FD /* LocalNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				B2C22D081B49514700BFA781 /* Core */,
 				B2F7F6BD1B48B04300ABA1FD /* ViewControllers */,
 				B2F7F6B91B48AF5F00ABA1FD /* BusinessLogic */,
 				B2F7F6991B48A91F00ABA1FD /* AppDelegate.swift */,
@@ -123,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */,
+				B2C22D041B494E6700BFA781 /* ScheduleType1.swift */,
+				B2C22D061B49508B00BFA781 /* ScheduleType2.swift */,
 			);
 			name = BusinessLogic;
 			sourceTree = "<group>";
@@ -237,7 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F7F69C1B48A91F00ABA1FD /* ViewController.swift in Sources */,
+				B2C22D071B49508B00BFA781 /* ScheduleType2.swift in Sources */,
 				B2F7F6BF1B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */,
+				B2C22D0A1B49515D00BFA781 /* StringExtensions.swift in Sources */,
+				B2C22D051B494E6700BFA781 /* ScheduleType1.swift in Sources */,
 				B2F7F69A1B48A91F00ABA1FD /* AppDelegate.swift in Sources */,
 				B2F7F6BB1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */,
 			);
@@ -247,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C22D0F1B4957FE00BFA781 /* ScheduleType2.swift in Sources */,
 				B2F7F6C01B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */,
-				B2F7F6BC1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */,
 				B2F7F6B01B48A91F00ABA1FD /* LocalNotificationsTests.swift in Sources */,
+				B2C22D0E1B4957FB00BFA781 /* ScheduleType1.swift in Sources */,
+				B2C22D0D1B4957F800BFA781 /* ScheduleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +461,7 @@
 				B2F7F6B51B48A91F00ABA1FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2F7F6B61B48A91F00ABA1FD /* Build configuration list for PBXNativeTarget "LocalNotificationsTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +470,7 @@
 				B2F7F6B81B48A91F00ABA1FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,7 @@ import UIKit
 
 class SelectScheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let _schedules: [ScheduleType] = [ScheduleType(name: "Test1"), ScheduleType(name: "Test2")]
+    let _schedules: [ScheduleType] = [ScheduleType1(), ScheduleType2()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,13 @@ class SelectScheduleViewController: UIViewController, UITableViewDataSource, UIT
         
         let item = _schedules[indexPath.row]
         cell.textLabel?.text = item.name
+        
+        if item.selected {
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }
+        else {
+            cell.accessoryType = UITableViewCellAccessoryType.None
+        }
         return cell
     }
     
@@ -40,6 +47,18 @@ class SelectScheduleViewController: UIViewController, UITableViewDataSource, UIT
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         println(_schedules[indexPath.row].name)
+        
+        let item = _schedules[indexPath.row]
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        
+        item.selected = !item.selected
+        
+        if item.selected {
+            cell?.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }
+        else {
+            cell?.accessoryType = UITableViewCellAccessoryType.None
+        }
     }
 
     /*

@@ -1,5 +1,5 @@
 //
-//  ScheduleType.swift
+//  ScheduleType1.swift
 //  LocalNotifications
 //
 //  Created by Serjo on 05/07/15.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-class ScheduleType {
+class ScheduleType1: ScheduleType {
     
-    var selected: Bool = false
-    let name: String
-    
-    init(name: String){
-        self.name = name
+    init() {
+        super.init(name: "ScheduleType1")
+        selected = true
     }
 }
+
+
