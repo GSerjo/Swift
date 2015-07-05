@@ -13,6 +13,10 @@
 		B2F7F6A11B48A91F00ABA1FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F7F6A01B48A91F00ABA1FD /* Images.xcassets */; };
 		B2F7F6A41B48A91F00ABA1FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F7F6A21B48A91F00ABA1FD /* LaunchScreen.xib */; };
 		B2F7F6B01B48A91F00ABA1FD /* LocalNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6AF1B48A91F00ABA1FD /* LocalNotificationsTests.swift */; };
+		B2F7F6BB1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */; };
+		B2F7F6BC1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */; };
+		B2F7F6BF1B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BE1B48B0B700ABA1FD /* SelectScheduleViewController.swift */; };
+		B2F7F6C01B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6BE1B48B0B700ABA1FD /* SelectScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 		B2F7F6A91B48A91F00ABA1FD /* LocalNotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalNotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F7F6AE1B48A91F00ABA1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F7F6AF1B48A91F00ABA1FD /* LocalNotificationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsTests.swift; sourceTree = "<group>"; };
+		B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType.swift; sourceTree = "<group>"; };
+		B2F7F6BE1B48B0B700ABA1FD /* SelectScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectScheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,9 @@
 		B2F7F6961B48A91F00ABA1FD /* LocalNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				B2F7F6BD1B48B04300ABA1FD /* ViewControllers */,
+				B2F7F6B91B48AF5F00ABA1FD /* BusinessLogic */,
 				B2F7F6991B48A91F00ABA1FD /* AppDelegate.swift */,
-				B2F7F69B1B48A91F00ABA1FD /* ViewController.swift */,
 				B2F7F69D1B48A91F00ABA1FD /* Main.storyboard */,
 				B2F7F6A01B48A91F00ABA1FD /* Images.xcassets */,
 				B2F7F6A21B48A91F00ABA1FD /* LaunchScreen.xib */,
@@ -110,6 +117,23 @@
 				B2F7F6AE1B48A91F00ABA1FD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2F7F6B91B48AF5F00ABA1FD /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				B2F7F6BA1B48AFCF00ABA1FD /* ScheduleType.swift */,
+			);
+			name = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		B2F7F6BD1B48B04300ABA1FD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2F7F6BE1B48B0B700ABA1FD /* SelectScheduleViewController.swift */,
+				B2F7F69B1B48A91F00ABA1FD /* ViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F7F69C1B48A91F00ABA1FD /* ViewController.swift in Sources */,
+				B2F7F6BF1B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */,
 				B2F7F69A1B48A91F00ABA1FD /* AppDelegate.swift in Sources */,
+				B2F7F6BB1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +247,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F7F6C01B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */,
+				B2F7F6BC1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */,
 				B2F7F6B01B48A91F00ABA1FD /* LocalNotificationsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
