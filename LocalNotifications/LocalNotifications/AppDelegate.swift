@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let alarm = Alarm()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,10 +32,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         scheduleLocalNotification()
     }
     
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        
+        if(application.applicationState == UIApplicationState.Active){
+            print("didReceiveLocalNotification foreground")
+            alarm.play()
+        }
+        else {
+            print("didReceiveLocalNotification background")
+        }
+    }
+    
     func scheduleLocalNotification(){
         
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: 30)
+        notification.fireDate = NSDate(timeIntervalSinceNow: 10)
         notification.timeZone = NSCalendar.currentCalendar().timeZone
         
         notification.alertBody = "Notification Item"

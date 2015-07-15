@@ -21,6 +21,9 @@
 		B2C22D191B4993CF00BFA781 /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D171B4993CF00BFA781 /* NSDateExtensions.swift */; };
 		B2C22D1B1B49D05600BFA781 /* ScheduleType3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D1A1B49D05600BFA781 /* ScheduleType3.swift */; };
 		B2C22D1C1B49D05600BFA781 /* ScheduleType3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D1A1B49D05600BFA781 /* ScheduleType3.swift */; };
+		B2CA84491B56FA6100617684 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA84481B56FA6100617684 /* Alarm.swift */; };
+		B2CA844A1B56FA6100617684 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA84481B56FA6100617684 /* Alarm.swift */; };
+		B2CA844C1B56FF8E00617684 /* NightOwl.m4r in Resources */ = {isa = PBXBuildFile; fileRef = B2CA844B1B56FF8E00617684 /* NightOwl.m4r */; };
 		B2F7F69A1B48A91F00ABA1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F6991B48A91F00ABA1FD /* AppDelegate.swift */; };
 		B2F7F69C1B48A91F00ABA1FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7F69B1B48A91F00ABA1FD /* ViewController.swift */; };
 		B2F7F69F1B48A91F00ABA1FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F7F69D1B48A91F00ABA1FD /* Main.storyboard */; };
@@ -50,6 +53,8 @@
 		B2C22D141B496FF400BFA781 /* TimeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeItem.swift; sourceTree = "<group>"; };
 		B2C22D171B4993CF00BFA781 /* NSDateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensions.swift; sourceTree = "<group>"; };
 		B2C22D1A1B49D05600BFA781 /* ScheduleType3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType3.swift; sourceTree = "<group>"; };
+		B2CA84481B56FA6100617684 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		B2CA844B1B56FF8E00617684 /* NightOwl.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; name = NightOwl.m4r; path = ../NightOwl.m4r; sourceTree = "<group>"; };
 		B2F7F6941B48A91F00ABA1FD /* LocalNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F7F6981B48A91F00ABA1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F7F6991B48A91F00ABA1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +144,7 @@
 		B2F7F6971B48A91F00ABA1FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2CA844B1B56FF8E00617684 /* NightOwl.m4r */,
 				B2F7F6981B48A91F00ABA1FD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -166,6 +172,7 @@
 			children = (
 				B2C22D101B4968EA00BFA781 /* Schedules */,
 				B2C22D111B49691200BFA781 /* Schedule.swift */,
+				B2CA84481B56FA6100617684 /* Alarm.swift */,
 			);
 			name = BusinessLogic;
 			sourceTree = "<group>";
@@ -262,6 +269,7 @@
 			files = (
 				B2F7F69F1B48A91F00ABA1FD /* Main.storyboard in Resources */,
 				B2F7F6A41B48A91F00ABA1FD /* LaunchScreen.xib in Resources */,
+				B2CA844C1B56FF8E00617684 /* NightOwl.m4r in Resources */,
 				B2F7F6A11B48A91F00ABA1FD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +299,7 @@
 				B2C22D121B49691200BFA781 /* Schedule.swift in Sources */,
 				B2C22D181B4993CF00BFA781 /* NSDateExtensions.swift in Sources */,
 				B2F7F6BB1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */,
+				B2CA84491B56FA6100617684 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +314,7 @@
 				B2F7F6C01B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */,
 				B2F7F6B01B48A91F00ABA1FD /* LocalNotificationsTests.swift in Sources */,
 				B2C22D0E1B4957FB00BFA781 /* ScheduleType1.swift in Sources */,
+				B2CA844A1B56FA6100617684 /* Alarm.swift in Sources */,
 				B2C22D0D1B4957F800BFA781 /* ScheduleType.swift in Sources */,
 				B2C22D161B496FF400BFA781 /* TimeItem.swift in Sources */,
 			);
