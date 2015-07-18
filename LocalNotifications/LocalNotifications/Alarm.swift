@@ -11,11 +11,16 @@ import AVFoundation
 
 class Alarm {
     
-    var audioPlayer: AVAudioPlayer!
+    private var audioPlayer: AVAudioPlayer!
+    private let filePath: String
+    
+    init(filePath: String){
+        self.filePath = filePath
+    }
     
     func play() {
         
-        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("NightOwl", ofType: "m4r")!)
+        var alertSound = NSURL(fileURLWithPath: filePath)
         println(alertSound)
 
         audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: nil)

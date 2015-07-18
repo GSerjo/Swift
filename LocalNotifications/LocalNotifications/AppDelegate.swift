@@ -12,12 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let alarm = Alarm()
+    var alarm: Alarm
+    var alarmFilePath: String
+    
+    override init(){
+        
+        alarmFilePath = NSBundle.mainBundle().pathForResource("NightOwl", ofType: "m4r")!
+        alarm = Alarm(filePath: alarmFilePath)
+        super.init()
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert|UIUserNotificationType.Badge, categories: nil)
+        
+        let notificationTypes = UIUserNotificationType.Sound|UIUserNotificationType.Alert|UIUserNotificationType.Badge
+        let settings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
         application.registerUserNotificationSettings(settings)
         
         return true
@@ -46,13 +56,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func scheduleLocalNotification(){
         
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        notification.fireDate = NSDate(timeIntervalSinceNow: 5)
         notification.timeZone = NSCalendar.currentCalendar().timeZone
         
-        notification.alertBody = "Notification Item"
+        notification.alertBody = "Notification Item1"
         notification.hasAction = true
-        notification.alertAction = "Do"
-        notification.applicationIconBadgeNumber++
+        notification.alertAction = "Do action"
+        notification.soundName = "NightOwl.m4r"
+        //notification.applicationIconBadgeNumber++
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
