@@ -12,15 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var alarm: Alarm
-    var alarmFilePath: String
-    
-    override init(){
-        
-        alarmFilePath = NSBundle.mainBundle().pathForResource("NightOwl", ofType: "m4r")!
-        alarm = Alarm(filePath: alarmFilePath)
-        super.init()
-    }
+    var alarm: Alarm = Alarm.sharedInstance
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -59,10 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notification.fireDate = NSDate(timeIntervalSinceNow: 5)
         notification.timeZone = NSCalendar.currentCalendar().timeZone
         
-        notification.alertBody = "Alert body"
+        notification.alertBody = "Необходимо подкрутить аппарат"
         notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute
         notification.hasAction = true
-        notification.alertAction = "Do action"
+        notification.alertAction = "Подкрутить аппарат"
 //        notification.soundName = "NightOwl.m4r"
         notification.soundName = UILocalNotificationDefaultSoundName
         //notification.applicationIconBadgeNumber++

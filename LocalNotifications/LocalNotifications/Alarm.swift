@@ -13,9 +13,10 @@ class Alarm {
     
     private var audioPlayer: AVAudioPlayer!
     private let filePath: String
+    static let sharedInstance = Alarm()
     
-    init(filePath: String){
-        self.filePath = filePath
+    init(){
+        self.filePath = NSBundle.mainBundle().pathForResource("NightOwl", ofType: "m4r")!
     }
     
     func play() {

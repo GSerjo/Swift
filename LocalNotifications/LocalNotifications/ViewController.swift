@@ -20,11 +20,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    
-    
     @IBAction func stopAlarm(sender: AnyObject) {
         
-        
+        Alarm.sharedInstance.stop()
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
     }
 
     override func didReceiveMemoryWarning() {

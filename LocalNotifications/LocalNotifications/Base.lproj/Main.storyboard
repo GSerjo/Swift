@@ -35,7 +35,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="7Sk-qZ-ixg"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RY-KS-1lR">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RY-KS-1lR">
                                 <rect key="frame" x="277" y="430" width="85" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Подкрутить">
@@ -48,6 +48,10 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1RY-KS-1lR" secondAttribute="centerX" id="EWk-o2-Gnc"/>
+                            <constraint firstAttribute="centerY" secondItem="1RY-KS-1lR" secondAttribute="centerY" constant="-50" id="ZNo-cV-HPY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ufB-jq-jvi">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="ShO-16-caf">
