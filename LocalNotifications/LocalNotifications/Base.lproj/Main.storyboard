@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U2M-RD-FvB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,10 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BL1-bf-NV0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BL1-bf-NV0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="318"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="318" id="YDz-cd-P1N"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TimeItemCell" id="vZq-r2-aKp">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -35,8 +39,8 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="7Sk-qZ-ixg"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RY-KS-1lR">
-                                <rect key="frame" x="277" y="430" width="85" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RY-KS-1lR">
+                                <rect key="frame" x="257.5" y="335" width="85" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Подкрутить">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,7 +54,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="1RY-KS-1lR" secondAttribute="centerX" id="EWk-o2-Gnc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BL1-bf-NV0" secondAttribute="trailing" constant="-16" id="KBy-KI-hZh"/>
+                            <constraint firstAttribute="centerX" secondItem="BL1-bf-NV0" secondAttribute="centerX" id="Tfk-yV-lKg"/>
                             <constraint firstAttribute="centerY" secondItem="1RY-KS-1lR" secondAttribute="centerY" constant="-50" id="ZNo-cV-HPY"/>
+                            <constraint firstItem="BL1-bf-NV0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="dD3-pn-QE6"/>
+                            <constraint firstItem="BL1-bf-NV0" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="dcY-wJ-bBh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ufB-jq-jvi">
