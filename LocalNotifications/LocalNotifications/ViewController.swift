@@ -12,11 +12,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var schedule: Schedule = Schedule.sharedInstance
 
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    
+    @IBAction func stopAlarm(sender: AnyObject) {
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

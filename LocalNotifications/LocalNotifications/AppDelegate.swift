@@ -26,8 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-        let notificationTypes = UIUserNotificationType.Sound|UIUserNotificationType.Alert|UIUserNotificationType.Badge
-        let settings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
+//        let notificationTypes = UIUserNotificationType.Sound | UIUserNotificationType.Alert|UIUserNotificationType.Badge
+        let settings = UIUserNotificationSettings(forTypes: .Sound | .Alert | .Badge, categories: nil)
         application.registerUserNotificationSettings(settings)
         
         return true
@@ -59,10 +59,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notification.fireDate = NSDate(timeIntervalSinceNow: 5)
         notification.timeZone = NSCalendar.currentCalendar().timeZone
         
-        notification.alertBody = "Notification Item1"
+        notification.alertBody = "Alert body"
+        notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute
         notification.hasAction = true
         notification.alertAction = "Do action"
-        notification.soundName = "NightOwl.m4r"
+//        notification.soundName = "NightOwl.m4r"
+        notification.soundName = UILocalNotificationDefaultSoundName
         //notification.applicationIconBadgeNumber++
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
