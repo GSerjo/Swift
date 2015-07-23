@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B209BA261B614CC4003780F0 /* NotificationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA251B614CC4003780F0 /* NotificationFactory.swift */; };
+		B209BA271B614CC4003780F0 /* NotificationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA251B614CC4003780F0 /* NotificationFactory.swift */; };
+		B209BA291B6155B6003780F0 /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA281B6155B6003780F0 /* ActionType.swift */; };
+		B209BA2A1B6155B6003780F0 /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA281B6155B6003780F0 /* ActionType.swift */; };
+		B209BA2C1B6155DF003780F0 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA2B1B6155DF003780F0 /* CategoryType.swift */; };
+		B209BA2D1B6155DF003780F0 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA2B1B6155DF003780F0 /* CategoryType.swift */; };
 		B2C22D051B494E6700BFA781 /* ScheduleType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D041B494E6700BFA781 /* ScheduleType1.swift */; };
 		B2C22D071B49508B00BFA781 /* ScheduleType2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D061B49508B00BFA781 /* ScheduleType2.swift */; };
 		B2C22D0A1B49515D00BFA781 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D091B49515D00BFA781 /* StringExtensions.swift */; };
@@ -46,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B209BA251B614CC4003780F0 /* NotificationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationFactory.swift; sourceTree = "<group>"; };
+		B209BA281B6155B6003780F0 /* ActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
+		B209BA2B1B6155DF003780F0 /* CategoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
 		B2C22D041B494E6700BFA781 /* ScheduleType1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType1.swift; sourceTree = "<group>"; };
 		B2C22D061B49508B00BFA781 /* ScheduleType2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType2.swift; sourceTree = "<group>"; };
 		B2C22D091B49515D00BFA781 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -173,6 +182,9 @@
 				B2C22D101B4968EA00BFA781 /* Schedules */,
 				B2C22D111B49691200BFA781 /* Schedule.swift */,
 				B2CA84481B56FA6100617684 /* Alarm.swift */,
+				B209BA251B614CC4003780F0 /* NotificationFactory.swift */,
+				B209BA281B6155B6003780F0 /* ActionType.swift */,
+				B209BA2B1B6155DF003780F0 /* CategoryType.swift */,
 			);
 			name = BusinessLogic;
 			sourceTree = "<group>";
@@ -295,11 +307,14 @@
 				B2C22D0A1B49515D00BFA781 /* StringExtensions.swift in Sources */,
 				B2C22D051B494E6700BFA781 /* ScheduleType1.swift in Sources */,
 				B2F7F69A1B48A91F00ABA1FD /* AppDelegate.swift in Sources */,
+				B209BA261B614CC4003780F0 /* NotificationFactory.swift in Sources */,
+				B209BA2C1B6155DF003780F0 /* CategoryType.swift in Sources */,
 				B2C22D1B1B49D05600BFA781 /* ScheduleType3.swift in Sources */,
 				B2C22D121B49691200BFA781 /* Schedule.swift in Sources */,
 				B2C22D181B4993CF00BFA781 /* NSDateExtensions.swift in Sources */,
 				B2F7F6BB1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */,
 				B2CA84491B56FA6100617684 /* Alarm.swift in Sources */,
+				B209BA291B6155B6003780F0 /* ActionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,13 +325,16 @@
 				B2C22D191B4993CF00BFA781 /* NSDateExtensions.swift in Sources */,
 				B2C22D131B49691200BFA781 /* Schedule.swift in Sources */,
 				B2C22D1C1B49D05600BFA781 /* ScheduleType3.swift in Sources */,
+				B209BA2D1B6155DF003780F0 /* CategoryType.swift in Sources */,
 				B2C22D0F1B4957FE00BFA781 /* ScheduleType2.swift in Sources */,
 				B2F7F6C01B48B0B700ABA1FD /* SelectScheduleViewController.swift in Sources */,
 				B2F7F6B01B48A91F00ABA1FD /* LocalNotificationsTests.swift in Sources */,
 				B2C22D0E1B4957FB00BFA781 /* ScheduleType1.swift in Sources */,
+				B209BA2A1B6155B6003780F0 /* ActionType.swift in Sources */,
 				B2CA844A1B56FA6100617684 /* Alarm.swift in Sources */,
 				B2C22D0D1B4957F800BFA781 /* ScheduleType.swift in Sources */,
 				B2C22D161B496FF400BFA781 /* TimeItem.swift in Sources */,
+				B209BA271B614CC4003780F0 /* NotificationFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocalNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -447,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocalNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

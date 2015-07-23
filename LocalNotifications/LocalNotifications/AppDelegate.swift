@@ -18,9 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-//        let notificationTypes = UIUserNotificationType.Sound | UIUserNotificationType.Alert|UIUserNotificationType.Badge
-        let settings = UIUserNotificationSettings(forTypes: .Sound | .Alert | .Badge, categories: nil)
-        application.registerUserNotificationSettings(settings)
+        NotificationFactory.sharedInstance.registerNotificateions()
         
         return true
     }
@@ -54,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notification.alertBody = "Необходимо подкрутить аппарат"
         notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute
         notification.hasAction = true
+        notification.category = CategoryType.notification.rawValue
         notification.alertAction = "Подкрутить аппарат"
 //        notification.soundName = "NightOwl.m4r"
         notification.soundName = UILocalNotificationDefaultSoundName
