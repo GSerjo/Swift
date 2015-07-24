@@ -13,6 +13,8 @@
 		B209BA2A1B6155B6003780F0 /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA281B6155B6003780F0 /* ActionType.swift */; };
 		B209BA2C1B6155DF003780F0 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA2B1B6155DF003780F0 /* CategoryType.swift */; };
 		B209BA2D1B6155DF003780F0 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA2B1B6155DF003780F0 /* CategoryType.swift */; };
+		B209BA2F1B62FA16003780F0 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA2E1B62FA16003780F0 /* ArrayExtensions.swift */; };
+		B209BA301B62FA16003780F0 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209BA2E1B62FA16003780F0 /* ArrayExtensions.swift */; };
 		B2C22D051B494E6700BFA781 /* ScheduleType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D041B494E6700BFA781 /* ScheduleType1.swift */; };
 		B2C22D071B49508B00BFA781 /* ScheduleType2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D061B49508B00BFA781 /* ScheduleType2.swift */; };
 		B2C22D0A1B49515D00BFA781 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C22D091B49515D00BFA781 /* StringExtensions.swift */; };
@@ -55,6 +57,7 @@
 		B209BA251B614CC4003780F0 /* NotificationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationFactory.swift; sourceTree = "<group>"; };
 		B209BA281B6155B6003780F0 /* ActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
 		B209BA2B1B6155DF003780F0 /* CategoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
+		B209BA2E1B62FA16003780F0 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		B2C22D041B494E6700BFA781 /* ScheduleType1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType1.swift; sourceTree = "<group>"; };
 		B2C22D061B49508B00BFA781 /* ScheduleType2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleType2.swift; sourceTree = "<group>"; };
 		B2C22D091B49515D00BFA781 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 			children = (
 				B2C22D091B49515D00BFA781 /* StringExtensions.swift */,
 				B2C22D171B4993CF00BFA781 /* NSDateExtensions.swift */,
+				B209BA2E1B62FA16003780F0 /* ArrayExtensions.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -315,6 +319,7 @@
 				B2F7F6BB1B48AFCF00ABA1FD /* ScheduleType.swift in Sources */,
 				B2CA84491B56FA6100617684 /* Alarm.swift in Sources */,
 				B209BA291B6155B6003780F0 /* ActionType.swift in Sources */,
+				B209BA2F1B62FA16003780F0 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +336,7 @@
 				B2F7F6B01B48A91F00ABA1FD /* LocalNotificationsTests.swift in Sources */,
 				B2C22D0E1B4957FB00BFA781 /* ScheduleType1.swift in Sources */,
 				B209BA2A1B6155B6003780F0 /* ActionType.swift in Sources */,
+				B209BA301B62FA16003780F0 /* ArrayExtensions.swift in Sources */,
 				B2CA844A1B56FA6100617684 /* Alarm.swift in Sources */,
 				B2C22D0D1B4957F800BFA781 /* ScheduleType.swift in Sources */,
 				B2C22D161B496FF400BFA781 /* TimeItem.swift in Sources */,

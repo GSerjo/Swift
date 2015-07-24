@@ -19,10 +19,11 @@ class Schedule {
     }
     
     var selectedSchedule: ScheduleType {
-        for item in items {
-            if item.selected {
-                return item
-            }
+        
+        let item = items.firstOrDefault{$0.selected}
+        
+        if item != nil {
+            return item!
         }
         return items[0]
     }
