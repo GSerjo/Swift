@@ -22,6 +22,29 @@ class NotificationFactory {
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
     }
     
+    func stopNotification(){
+        
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+    }
+    
+    func scheduleNotification(#fireDate: NSDate) {
+        
+        let notification = UILocalNotification()
+        notification.fireDate = fireDate
+        notification.timeZone = NSCalendar.currentCalendar().timeZone
+        
+        notification.alertBody = "Необходимо подкрутить аппарат"
+        notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute
+        notification.hasAction = true
+        notification.category = CategoryType.notification.rawValue
+        notification.alertAction = "Подкрутить аппарат"
+        //        notification.soundName = "NightOwl.m4r"
+        notification.soundName = UILocalNotificationDefaultSoundName
+        //notification.applicationIconBadgeNumber++
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
+    
     private func createCategory() -> UIMutableUserNotificationCategory {
         
         let snoozeAction = createAction(ActionType.snooze, actionName: "Отложить")

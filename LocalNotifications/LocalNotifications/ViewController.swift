@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var schedule: Schedule = Schedule.sharedInstance
+    let schedule = Schedule.sharedInstance
+    let notificationFactory = NotificationFactory.sharedInstance
 
 
     @IBOutlet weak var tableView: UITableView!
@@ -26,6 +27,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         UIApplication.sharedApplication().cancelAllLocalNotifications()
     }
 
+    @IBAction func stopApplication(sender: AnyObject) {
+        
+        notificationFactory.stopNotification()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

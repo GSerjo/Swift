@@ -12,13 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var alarm: Alarm = Alarm.sharedInstance
+    var alarm = Alarm.sharedInstance
+    let notificationFactory = NotificationFactory.sharedInstance
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
         
-        NotificationFactory.sharedInstance.registerNotificateions()
+        notificationFactory.registerNotificateions()
         
         return true
     }
@@ -65,20 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func scheduleLocalNotification(){
         
-        let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: 5)
-        notification.timeZone = NSCalendar.currentCalendar().timeZone
-        
-        notification.alertBody = "Необходимо подкрутить аппарат"
-        notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute
-        notification.hasAction = true
-        notification.category = CategoryType.notification.rawValue
-        notification.alertAction = "Подкрутить аппарат"
-//        notification.soundName = "NightOwl.m4r"
-        notification.soundName = UILocalNotificationDefaultSoundName
-        //notification.applicationIconBadgeNumber++
-        
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        notificationFactory.scheduleNotification(fireDate: NSDate(timeIntervalSinceNow: 5))
     }
 
     func applicationWillResignActive(application: UIApplication) {

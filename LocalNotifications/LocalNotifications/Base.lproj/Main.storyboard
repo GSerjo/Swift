@@ -49,6 +49,17 @@
                                     <action selector="stopAlarm:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3LO-8q-0bF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTE-oX-nAW">
+                                <rect key="frame" x="257" y="373" width="85" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Остановить">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAlarm:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="o5U-GZ-26F"/>
+                                    <action selector="stopApplication:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j7x-SE-43t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
