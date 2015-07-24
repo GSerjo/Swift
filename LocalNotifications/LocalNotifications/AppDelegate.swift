@@ -43,6 +43,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+        
+        if(notification.category != CategoryType.notification.rawValue){
+            return
+        }
+        
+        if let actionType = ActionType(rawValue: identifier!){
+            
+            switch actionType {
+        
+            case ActionType.snooze:
+                println("snooze")
+                
+            case ActionType.complete:
+                println("complete")
+            }
+        }
+        completionHandler()
+    }
+    
     func scheduleLocalNotification(){
         
         let notification = UILocalNotification()
