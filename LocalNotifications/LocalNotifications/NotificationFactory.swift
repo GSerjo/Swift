@@ -12,6 +12,8 @@ class NotificationFactory {
     
     static let sharedInstance = NotificationFactory()
     
+    private init(){}
+    
     func registerNotificateions() {
         
         let notificateionTypes: UIUserNotificationType = .Sound | .Alert | .Badge

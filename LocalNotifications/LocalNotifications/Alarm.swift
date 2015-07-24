@@ -15,7 +15,7 @@ class Alarm {
     private let filePath: String
     static let sharedInstance = Alarm()
     
-    init(){
+    private init(){
         self.filePath = NSBundle.mainBundle().pathForResource("NightOwl", ofType: "m4r")!
     }
     
